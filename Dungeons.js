@@ -11,7 +11,7 @@ method.prepareMap = function() {
   let ix = 0;
   for (let iy = 0; iy < this._sizeY; iy++) {
     this._map[ix, iy] = 0;
-
+    console.log(this._map);
     if (iy == this._sizeY - 1 && ix < this._sizeX) {
       iy = -1;
       ix++;
@@ -22,6 +22,8 @@ method.prepareMap = function() {
 method.getMap = function() {
   return this._map;
 };
+
+
 
 
 module.exports = Dungeons;
